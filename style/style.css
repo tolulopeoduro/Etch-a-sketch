@@ -1,0 +1,23 @@
+.para {
+    display: none;
+}
+
+#container {
+    height : 500px;
+    width: 500px;
+    border: 1px solid black;
+    padding: 0px;
+    display: grid;
+    grid-row: auto;
+    grid-column:auto;
+}
+
+.pixel1 {
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+}
+
+.board{
+    background-color: black;
+}
