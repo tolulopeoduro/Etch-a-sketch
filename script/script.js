@@ -1,7 +1,10 @@
-const body = document.querySelector("body");
+const body = document.getElementById("body");
 const set = document.getElementById("set");
 const size = document.getElementById("size");
 const set16 = document.getElementById("set-to-16");
+const reset = document.getElementById("reset");
+
+
 function create(size){
     const container = document.createElement("div");
     container.setAttribute("id" , "container");
@@ -36,13 +39,16 @@ create(16);
 let recreate=()=>{
     body.removeChild(container);
     create(size.value);
+    set16.onclick = st16;
 }
 
-
+let st16=()=>{
+    size.value = 16;
+    body.removeChild(container);
+    create(size.value);
+}
 
 
 set.onclick = recreate;
 
-const guide = document.createElement("div");
-body.appendChild(guide);
-const p1 = document.createElement("p");
+reset.onclick = recreate;
