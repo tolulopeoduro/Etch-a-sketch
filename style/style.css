@@ -7,8 +7,6 @@
     border: 1px solid black;
     padding: 0px;
     display: grid;
-    grid-template-rows: repeat(16, 1fr );
-    grid-template-columns: repeat(16, 1fr);
     margin : auto;
 }
 
