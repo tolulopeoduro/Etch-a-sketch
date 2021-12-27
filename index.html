@@ -4,14 +4,29 @@
         <link href="./style/style.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <div id ="frame">
-            <h1>Sketch</h1>
-            <input placeholder="Set size" type = "number" id = "size" min="16" max="64">
-            <button id = "set">set</button>
-            <button id = "reset">reset</button>
-            <button id = "set-to-16">reset to 16 x 16</button>
+        <div class="control">
+            <h1 class="header">Sketch</h1>
+            <label>
+                Primary Color
+                <input id="color" type="color" value = "#000000" onchange="(e) => console.log(e)"/>
+            </label>
+            <label>
+                Background Color
+                <input id="bg-color" type="color" value = "#ffffff" onchange="(e) => console.log(e)"/>
+            </label>
+            <br/>
+            <div class="setSize">
+                <input placeholder="Set size" value="40" type = "number" id = "size" min="80px" max="64">
+                <button id = "set">set</button>
+                <button id = "reset">reset</button>
+            </div>
+            <div>
+                <button id = "set-to-40">reset to 40 x 30</button>
+                <button id = "set-to-80">reset to 80 x 60</button>
+            </div>
+        </div>
+        <div class="main">
             <div id = "body"></div>
-            <p>Please set grid size between 16 to 80 for optimal performance</p>
         </div>
         <script src = "script/script.js"></script>
     </body>
