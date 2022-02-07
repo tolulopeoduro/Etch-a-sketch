@@ -1,4 +1,4 @@
-Movicheq Angular
+Etch A Sketch
 ================
 
 Simple sketch app made with HTML , CSS and Javascript
