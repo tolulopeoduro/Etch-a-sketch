@@ -7,7 +7,6 @@ const reset = document.getElementById("reset");
 const color = document.getElementById("color")
 const backgroundColor = document.getElementById('bg-color')
 
-
 function create(size){
     console.log(Math.floor(size*0.75))
     const container = document.createElement("div");
